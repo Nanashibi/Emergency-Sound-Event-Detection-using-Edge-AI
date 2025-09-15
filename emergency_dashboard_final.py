@@ -19,10 +19,10 @@ st.set_page_config(
 )
 
 # Twilio credentials
-TWILIO_SID = "AC788079dd57c668349b1e12c04fede38a"
-TWILIO_AUTH = "2cfeeb3c552bec4819a2cb4180271eaa"
-TWILIO_FROM = "+18284922419"
-TO_NUMBER = "+919845183332"
+TWILIO_SID = ""
+TWILIO_AUTH = ""
+TWILIO_FROM = ""
+TO_NUMBER = ""
 
 # Alert configuration
 ALERT_THRESHOLD = 3  # Number of emergencies to trigger alert
@@ -248,4 +248,5 @@ if len(df_filtered) > 0:
         data=filtered_csv,
         file_name="emergency_events_filtered.csv",
         mime="text/csv",
+
     )

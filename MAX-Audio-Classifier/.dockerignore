@@ -1,0 +1,9 @@
+README.*
+docs/
+.git/
+tests/
+.travis.yml
+.idea/
+samples/*.wav
+.DS_Store
+__pycache__/

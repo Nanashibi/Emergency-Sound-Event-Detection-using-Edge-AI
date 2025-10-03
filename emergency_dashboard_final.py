@@ -18,7 +18,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Twilio credentials
+# Twilio credentials (update with your own credentials, confidential)
 TWILIO_SID = ""
 TWILIO_AUTH = ""
 TWILIO_FROM = ""
@@ -250,3 +250,4 @@ if len(df_filtered) > 0:
         mime="text/csv",
 
     )
+

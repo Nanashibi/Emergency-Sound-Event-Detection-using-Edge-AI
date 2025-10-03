@@ -34,10 +34,10 @@ conn.commit()
 # ============ MQTT Callbacks ============
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
-        print("✅ Connected to HiveMQ Cloud")
+        print("Connected to HiveMQ Cloud")
         client.subscribe(TOPIC)
     else:
-        print(f"❌ Connection failed with code {rc}")
+        print(f"Connection failed with code {rc}")
 
 def on_message(client, userdata, msg):
     try:
@@ -51,9 +51,9 @@ def on_message(client, userdata, msg):
             VALUES (?, ?, ?, ?, ?)
         """, (label, is_emergency, timestamp, msg.topic, payload))
         conn.commit()
-        print(f"✅ Logged: {label} | Emergency: {is_emergency} | Topic: {msg.topic}")
+        print(f"Logged: {label} | Emergency: {is_emergency} | Topic: {msg.topic}")
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"Error: {e}")
 
 # ============ Start MQTT Client ============
 client = mqtt.Client()
@@ -64,3 +64,4 @@ client.tls_set(cert_reqs=ssl.CERT_NONE)
 client.tls_insecure_set(True)
 client.connect(BROKER, PORT)
 client.loop_forever()
+

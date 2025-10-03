@@ -1,6 +1,27 @@
-﻿streamlit
+# Core dependencies for front-end
+numpy
+scipy
 pandas
 matplotlib
-seaborn
-wordcloud
-twilio
+plotly
+librosa
+soundfile
+
+# Machine Learning / Deep Learning
+tensorflow>=2.9.0
+scikit-learn
+
+# API and Web
+flask
+flask-restplus
+gunicorn
+requests
+
+# Streamlit Dashboard
+streamlit
+
+# MQTT Logger
+paho-mqtt
+
+# Testing
+pytest

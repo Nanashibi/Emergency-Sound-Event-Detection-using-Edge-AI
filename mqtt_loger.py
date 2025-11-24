@@ -13,7 +13,7 @@ PORT = 8883
 TOPIC = "#"  # or your specific topic
 
 # ============ Emergency Labels ============
-emergency_labels = ["Gunshot", "Siren", "Explosion", "Glass_breaking", "Screaming", "Fire_alarm"]
+emergency_labels = ["crying", "screaming", "shouting"]
 
 # ============ SQLite Setup ============
 conn = sqlite3.connect("mqtt_logs.db", check_same_thread=False)
@@ -64,4 +64,5 @@ client.tls_set(cert_reqs=ssl.CERT_NONE)
 client.tls_insecure_set(True)
 client.connect(BROKER, PORT)
 client.loop_forever()
+
 

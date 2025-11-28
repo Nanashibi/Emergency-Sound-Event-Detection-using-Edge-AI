@@ -1,4 +1,4 @@
-**Emergency Sound Event Detection using Edge AI**
+  **Real-Time Human Distress Sound Event Detection using Edge AI**
 
 This project provides tools for detecting **emergency sounds** using Edge AI, logging the events into a database, and visualizing the results in an interactive dashboard. The repository also includes a pre-trained audio classifier, sample datasets, and web-based audio analysis utilities.
 
@@ -7,7 +7,7 @@ This project provides tools for detecting **emergency sounds** using Edge AI, lo
 ##  Project Structure
 
 ```
-Emergency-Sound-Event-Detection-using-Edge-AI-main
+Real-Time-Human-Distress-Sound-Event-Detection-using-Edge-AI-main
 ├── MAX-Audio-Classifier         # Pre-trained audio classifier based on VGGish
 │   ├── api                      # API definition for prediction
 │   ├── core                     # Core model implementation and features
